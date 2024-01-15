@@ -16,11 +16,12 @@ return new class extends Migration
             $table->string('username', 255)->nullable();
             $table->string('name', 255)->nullable();
             $table->string('email', 191)->unique()->nullable();
+            $table->string('photo', 255)->nullable();
             $table->string('address', 255)->nullable();
             $table->string('phone', 255)->nullable();
             $table->string('vendor_join', 255)->nullable();
             $table->text('vendor_info')->nullable();
-            $table->tinyInteger('role')->default(0);
+            $table->string('role')->default('customer');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password', 255)->nullable();
             $table->rememberToken()->nullable();
