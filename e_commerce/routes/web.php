@@ -58,6 +58,9 @@ Route::middleware(['auth', 'verified', 'role:admin'])->group(function () {
             //admin profile
             Route::get('profile', 'AdminProfile')->name('admin.profile');
             Route::post('profile', 'AdminUpdateProfile')->name('admin.update.profile');
+            //update password
+            Route::get('change-password', 'AdminChangePassword')->name('admin.change_password');
+            Route::post('change-password', 'AdminUpdatePassword')->name('admin.update_password');
         });
     });
 });

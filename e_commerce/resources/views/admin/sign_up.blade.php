@@ -18,6 +18,7 @@
     <link href="{{ asset('backend/assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/assets/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/assets/css/icons.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}?time={{ time() }}">
     <title>Rukada - Responsive Bootstrap 5 Admin Template</title>
 </head>
 

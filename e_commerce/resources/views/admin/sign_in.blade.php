@@ -18,6 +18,7 @@
     <link href="{{ asset('backend/assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/assets/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/assets/css/icons.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}?time={{ time() }}">
     <title>Rukada - Responsive Bootstrap 5 Admin Template</title>
 </head>
 
@@ -55,7 +56,7 @@
 
                                         <div class="col-12">
                                             <label for="inputEmailAddress" class="form-label">Email Address</label>
-                                            <input type="email" name="email" class="form-control" id="inputEmailAddress" placeholder="Email Address" :value="old('email')" required autofocus autocomplete="email">
+                                            <input type="email" name="email" class="form-control" id="inputEmailAddress" placeholder="Email Address" value="{{ old('email') }}" required autofocus autocomplete="email">
                                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
                                         </div>
 

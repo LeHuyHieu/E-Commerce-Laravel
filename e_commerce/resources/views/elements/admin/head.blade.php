@@ -19,6 +19,5 @@
 <link rel="stylesheet" href="{{ asset('backend/assets/css/dark-theme.css') }}" />
 <link rel="stylesheet" href="{{ asset('backend/assets/css/semi-dark.css') }}" />
 <link rel="stylesheet" href="{{ asset('backend/assets/css/header-colors.css') }}" />
-<!-- toastr -->
-<link rel="stylesheet" href="{{ asset('backend/assets/plugins/toastr/toastr.min.css') }}">
-<title>Rukada - Responsive Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}?time={{ time() }}">
+<title>{{ (isset($title) && $title != '') ? $title : 'Dashboard' }}</title>

@@ -1,105 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f0327a21-7d0a-4e07-acba-70eb8fb7fdd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/dashboard.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/profile.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/footer.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/header.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/slider_bar.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/switcher.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/layouts/admin.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/layouts/customer.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e_commerce/resources/views/layouts/vendor.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/Auth/AuthenticatedSessionController.php" afterPath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/Auth/AuthenticatedSessionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/Auth/RegisteredUserController.php" afterPath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/Auth/RegisteredUserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/e_commerce/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/e_commerce/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/e_commerce/app/Models/User.php" afterPath="$PROJECT_DIR$/e_commerce/app/Models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/e_commerce/routes/web.php" afterPath="$PROJECT_DIR$/e_commerce/routes/web.php" />
+      <change afterPath="$PROJECT_DIR$/e_commerce/public/backend/assets/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/change_password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/admin/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/slider_bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/slider_bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/routes/web.php" afterDir="false" />
     </list>
-    <ignored path="laravel_ecommerce.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/e_commerce/composer.json</pharConfigPath>
+    <execution />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="laravel_ecommerce" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e_commerce/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="59" column="87" selection-start-line="59" selection-start-column="87" selection-end-line="59" selection-end-column="87" />
-              <folding>
-                <element signature="e#7#50#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2024_01_15_113844_create_discounts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_113844_create_discounts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2024_01_15_095527_create_products.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="29" column="77" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2024_01_15_114559_create_inventorys.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_114559_create_inventorys.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2024_01_15_091030_create_product_variants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_091030_create_product_variants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -116,20 +62,16 @@
         <option value="$PROJECT_DIR$/e_commerce/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/dashboard/index.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/e_commerce/app/Models/User.php" />
         <option value="$PROJECT_DIR$/e_commerce/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/login.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/app/Http/Controllers/Auth/RegisteredUserController.php" />
         <option value="$PROJECT_DIR$/e_commerce/app/Http/Controllers/FrontendController.php" />
-        <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php" />
-        <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/app/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/e_commerce/app/Http/Middleware/Role.php" />
         <option value="$PROJECT_DIR$/e_commerce/app/Http/Controllers/Auth/AuthenticatedSessionController.php" />
         <option value="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/slider_bar.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/profile/profile.blade.php" />
-        <option value="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php" />
         <option value="$PROJECT_DIR$/e_commerce/routes/web.php" />
         <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/profile.blade.php" />
@@ -141,8 +83,16 @@
         <option value="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_090927_create_product_attributes.php" />
         <option value="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_091030_create_product_variants.php" />
         <option value="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_113844_create_discounts.php" />
-        <option value="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php" />
         <option value="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_114559_create_inventorys.php" />
+        <option value="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php" />
+        <option value="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php" />
+        <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php" />
+        <option value="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php" />
+        <option value="$PROJECT_DIR$/e_commerce/public/backend/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/e_commerce/database/seeders/UserTable.php" />
+        <option value="$PROJECT_DIR$/e_commerce/database/seeders/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php" />
       </list>
     </option>
   </component>
@@ -152,16 +102,139 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpServers">
-    <servers />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php8.2.13\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/e_commerce/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/league/config" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/composer" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/yoeunes/toastr" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/php-flasher/flasher" />
+      <path value="$PROJECT_DIR$/e_commerce/vendor/php-flasher/flasher-laravel" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1038" />
   </component>
+  <component name="ProjectId" id="2bGFxN2475l6OUNpKeWFfhyZUtN" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -184,15 +257,8 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -209,7 +275,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,348 +292,75 @@
               <option name="myItemId" value="laravel_ecommerce" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel_ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e_commerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web_framework" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/wamp64/www/laravel_ecommerce",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\laravel_ecommerce\e_commerce\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command" show_console_on_std_err="false" show_console_on_std_out="false">
+      <parameters>
+        <option name="additionalArguments">
+          <list />
+        </option>
+        <option name="backtraceMode" value="2" />
+        <option name="command" value="run" />
+        <option name="environmentVariables">
+          <map />
+        </option>
+        <option name="nocapture" value="true" />
+      </parameters>
+      <module />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/e_commerce/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
+      <method v="2" />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+      </set>
+    </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -581,24 +373,32 @@
       <updated>1705223822807</updated>
       <workItem from="1705223824100" duration="14727000" />
       <workItem from="1705245144805" duration="3032000" />
-      <workItem from="1705294997875" duration="11184000" />
+      <workItem from="1705294997875" duration="14495000" />
+      <workItem from="1705455228214" duration="1292000" />
+      <workItem from="1705480935033" duration="1651000" />
+      <workItem from="1705676017624" duration="526000" />
+      <workItem from="1705676561179" duration="1220000" />
+      <workItem from="1705833757734" duration="335000" />
+      <workItem from="1705834104514" duration="556000" />
+      <workItem from="1705834668708" duration="10387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28943000" />
+    <option name="totallyTimeSpent" value="36943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1038" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26859045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26859045" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -606,10 +406,12 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -619,47 +421,11 @@
       <collection />
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/e_commerce/app/Http/Controllers/ProfileController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,9 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding>
-            <element signature="e#80#126#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,21 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/app/Http/Requests/Auth/LoginRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -811,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-682">
           <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,27 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="90" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/elements/admin/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="327" column="113" selection-start-line="327" selection-start-column="113" selection-end-line="327" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,47 +636,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="57" column="144" selection-start-line="57" selection-start-column="144" selection-end-line="57" selection-end-column="144" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_090213_create_sizes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_090545_create_attribute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="57" column="211" selection-start-line="57" selection-start-column="211" selection-end-line="57" selection-end-column="211" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_090213_create_sizes.php" />
+    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_090545_create_attribute.php" />
     <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_090927_create_product_attributes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,19 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="59" column="87" selection-start-line="59" selection-start-column="87" selection-end-line="59" selection-end-column="87" />
-          <folding>
-            <element signature="e#7#50#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,15 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="29" column="77" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,9 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding>
-            <element signature="e#7#52#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,7 +680,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/app/Http/Requests/Auth/LoginRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/public/backend/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1452">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+          <folding>
+            <element signature="e#7#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/database/seeders/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#37#94#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/database/seeders/UserTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#38#89#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

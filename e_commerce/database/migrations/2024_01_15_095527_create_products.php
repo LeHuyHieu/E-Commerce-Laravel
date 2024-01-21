@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->integer('category_id')->default(0);
-            $table->string('name')->nullable();
-            $table->string('image')->nullable();
-            $table->json('list_images')->nullable();
+            $table->unsignedBigInteger('category_id')->default(0);
+            $table->string('name', 255)->nullable();
+            $table->string('sku', 255)->nullable();
+            $table->string('image', 255)->nullable();
+            $table->json('list_images', 400)->nullable();
             $table->string('description', 500)->nullable();
             $table->integer('price')->default(0);
             $table->integer('quantity')->default(0);
@@ -28,6 +29,7 @@ return new class extends Migration
 
             $table->foreign('discount_id')->references('id')->on('discounts');
             $table->foreign('inventory_id')->references('id')->on('inventorys');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 

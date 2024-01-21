@@ -56,21 +56,29 @@
                         <div class="col-lg-8">
                             <div class="card">
                                 <form  method="post" action="{{ route('admin.update.profile') }}" class="card-body" enctype="multipart/form-data">
-                                    <div class="row mb-3">
-                                        @csrf
-                                        <div class="col-sm-3">
-                                            <h6 class="mb-0">Full Name</h6>
-                                        </div>
-                                        <div class="col-sm-9 text-secondary">
-                                            <input type="text" name="name" class="form-control" value="{{ $data_user['name'] }}" />
-                                        </div>
-                                    </div>
+                                    @csrf
                                     <div class="row mb-3">
                                         <div class="col-sm-3">
                                             <h6 class="mb-0">Email</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <input type="text" name="email" class="form-control" value="{{ $data_user['email'] }}" />
+                                            <input type="email" disabled name="email" class="form-control" value="{{ $data_user['email'] }}" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-0">Username</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" disabled name="username" class="form-control" value="{{ $data_user['username'] }}" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-0">Full Name</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" name="name" class="form-control" value="{{ $data_user['name'] }}" />
                                         </div>
                                     </div>
                                     <div class="row mb-3">

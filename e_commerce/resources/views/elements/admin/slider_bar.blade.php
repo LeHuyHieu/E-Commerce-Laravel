@@ -34,7 +34,7 @@
         <li class="menu-label">Tables</li>
         <li>
             <a href="">
-                <div class="parent-icon"><i class='bx bx-cookie'></i></div>
+                <div class="parent-icon"><i class='fadeIn animated bx bx-table'></i></div>
                 <div class="menu-title">Table Categories</div>
             </a>
         </li>
