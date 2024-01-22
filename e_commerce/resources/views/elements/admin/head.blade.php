@@ -15,9 +15,16 @@
 <link href="{{ asset('backend/assets/css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('backend/assets/css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('backend/assets/css/icons.css') }}" rel="stylesheet">
+<!-- data table -->
+<link href="{{ asset('backend/assets/plugins/datatable/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" />
+<!-- select 2 -->
+<link href="{{ asset('backend/assets/plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('backend/assets/plugins/select2/css/select2-bootstrap4.css') }}" rel="stylesheet" />
 <!-- Theme Style CSS -->
 <link rel="stylesheet" href="{{ asset('backend/assets/css/dark-theme.css') }}" />
 <link rel="stylesheet" href="{{ asset('backend/assets/css/semi-dark.css') }}" />
 <link rel="stylesheet" href="{{ asset('backend/assets/css/header-colors.css') }}" />
+<!-- jquery confirm -->
+<link rel="stylesheet" href="{{ asset('backend/assets/plugins/jquery-confirm/jquery-confirm.min.css') }}">
 <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}?time={{ time() }}">
 <title>{{ (isset($title) && $title != '') ? $title : 'Dashboard' }}</title>

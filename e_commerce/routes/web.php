@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\Admin\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,27 +51,31 @@ Route::middleware('auth')->group(function () {
 });
 
 //admin
-Route::middleware(['auth', 'verified', 'role:admin'])->group(function () {
-    Route::prefix('admin')->group(function () {
-        Route::controller(AdminController::class)->group(function () {
-            Route::get('dashboard', 'index')->name('admin.index');
-            Route::get('logout', 'AdminLogout')->name('admin.logout');
-            //admin profile
-            Route::get('profile', 'AdminProfile')->name('admin.profile');
-            Route::post('profile', 'AdminUpdateProfile')->name('admin.update.profile');
-            //update password
-            Route::get('change-password', 'AdminChangePassword')->name('admin.change_password');
-            Route::post('change-password', 'AdminUpdatePassword')->name('admin.update_password');
-        });
+Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->name('admin.')->controller(AdminController::class)->group(function () {
+    Route::get('dashboard', 'index')->name('index');
+    Route::get('logout', 'AdminLogout')->name('logout');
+    //admin profile
+    Route::get('profile', 'AdminProfile')->name('profile');
+    Route::post('profile', 'AdminUpdateProfile')->name('update.profile');
+    //update password
+    Route::get('change-password', 'AdminChangePassword')->name('change_password');
+    Route::post('change-password', 'AdminUpdatePassword')->name('update_password');
+    //routes resource
+    Route::resource('categories', CategoryController::class);
+    Route::prefix('categories')->name('categories.')->controller(CategoryController::class)->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('create', 'create')->name('create');
+        Route::post('create', 'store')->name('store');
+        Route::get('edit/{id}', 'edit')->name('edit');
+        Route::put('update/{id}', 'update')->name('update');
+        Route::delete('destroy/{id}', 'destroy')->name('destroy');
     });
 });
 //end admin
 
 //vendor
-Route::middleware(['auth', 'verified', 'role:vendor'])->group(function () {
-    Route::prefix('vendor')->group(function () {
+Route::middleware(['auth', 'verified', 'role:vendor'])->prefix('vendor')->name('vendor.')->group(function () {
 
-    });
 });
 //end vendor
 

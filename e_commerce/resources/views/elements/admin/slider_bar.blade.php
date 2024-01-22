@@ -33,7 +33,7 @@
         </li>
         <li class="menu-label">Tables</li>
         <li>
-            <a href="">
+            <a href="{{ route('admin.categories.index') }}">
                 <div class="parent-icon"><i class='fadeIn animated bx bx-table'></i></div>
                 <div class="menu-title">Table Categories</div>
             </a>
