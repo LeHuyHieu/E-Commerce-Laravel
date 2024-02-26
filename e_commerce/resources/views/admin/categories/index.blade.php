@@ -17,7 +17,8 @@
                 </div>
                 <div class="ms-auto">
                     <button class="btn btn-danger btn-sm"><i class="fadeIn animated bx bx-trash"></i> Delete</button>
-                    <a href="{{ route('admin.categories.create') }}" class="btn btn-primary btn-sm"><i class="fadeIn animated bx bx-plus"></i> Create</a>
+                    <a href="{{ route('admin.categories.create') }}" class="btn btn-primary btn-sm"><i
+                            class="fadeIn animated bx bx-plus"></i> Create</a>
                 </div>
             </div>
             <!--end breadcrumb-->
@@ -25,6 +26,7 @@
             <hr/>
             <div class="card">
                 <div class="card-body">
+                    @include('admin.categories.component.filter_categories')
                     <div class="table-responsive">
                         @include('admin.categories.component.table')
                     </div>

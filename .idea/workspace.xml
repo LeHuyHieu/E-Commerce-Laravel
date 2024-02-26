@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0327a21-7d0a-4e07-acba-70eb8fb7fdd4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/e_commerce/public/backend/assets/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/change_password.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel_ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_ecommerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+    <list default="true" id="f0327a21-7d0a-4e07-acba-70eb8fb7fdd4" name="Default" comment="add function change password">
+      <change afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/categories/component/filter_categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/migrations/2024_01_15_095527_create_products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/admin/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/public/backend/assets/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/public/backend/assets/custom/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/categories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_in.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/admin/sign_up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/js.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/slider_bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/resources/views/elements/admin/slider_bar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e_commerce/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +28,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LeHuyHieu&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="17c7689a-d4ee-4680-b503-46634f78a9be" />
+        <option name="url" value="https://github.com/LeHuyHieu/E-Commerce-Laravel.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/e_commerce/database/factories/UserFactory.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -308,13 +316,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/wamp64/www/laravel_ecommerce",
+    "last_opened_file_path": "C:/wamp64/www/ecommerce",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.language",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -380,8 +389,20 @@
       <workItem from="1705676561179" duration="1220000" />
       <workItem from="1705833757734" duration="335000" />
       <workItem from="1705834104514" duration="556000" />
-      <workItem from="1705834668708" duration="10387000" />
+      <workItem from="1705834668708" duration="16522000" />
+      <workItem from="1705905803511" duration="21516000" />
+      <workItem from="1706021037812" duration="767000" />
+      <workItem from="1706021821531" duration="1295000" />
     </task>
+    <task id="LOCAL-00001" summary="add function change password">
+      <option name="closed" value="true" />
+      <created>1705846866616</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705846866616</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -420,6 +441,14 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add function change password" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function change password" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/e_commerce/app/Http/Controllers/ProfileController.php">

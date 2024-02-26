@@ -1,4 +1,4 @@
-function confirm_delete (event, class_name, title, content) {
+function confirm_delete(event, class_name, title, content) {
     $(document).on(event, class_name, function (e) {
         e.preventDefault();
         let form = $(this).closest('form');
@@ -9,7 +9,7 @@ function confirm_delete (event, class_name, title, content) {
                 delete: {
                     text: 'Delete',
                     btnClass: 'btn-danger',
-                    action: function(){
+                    action: function () {
                         delete_ajax(form)
                     }
                 },
@@ -19,9 +19,10 @@ function confirm_delete (event, class_name, title, content) {
         });
     })
 }
-function delete_ajax (form) {
+
+function delete_ajax(form) {
     let link = form.attr('action');
-    let data= {
+    let data = {
         '_method': form.find('input[name="_method"]').val(),
         '_token': form.find('input[name="_token"]').val()
     }
@@ -37,6 +38,7 @@ function delete_ajax (form) {
         })
     })
 }
-$(function() {
+
+$(function () {
     confirm_delete('click', '.btn-delete-item', 'Confirm', 'Confirm delete!')
 });

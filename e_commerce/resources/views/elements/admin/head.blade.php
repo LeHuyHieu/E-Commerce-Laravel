@@ -27,4 +27,7 @@
 <!-- jquery confirm -->
 <link rel="stylesheet" href="{{ asset('backend/assets/plugins/jquery-confirm/jquery-confirm.min.css') }}">
 <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}?time={{ time() }}">
+<!-- toastr -->
+<link href="{{ asset('backend/assets/plugins/toastr/toastr.min.css') }}" rel="stylesheet">
+<!-- end toastr -->
 <title>{{ (isset($title) && $title != '') ? $title : 'Dashboard' }}</title>

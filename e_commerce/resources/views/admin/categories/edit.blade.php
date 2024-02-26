@@ -50,9 +50,9 @@
                                         <option value="0">Choose...</option>
                                         @foreach($categories as $category)
                                             @if($category['parent_id'] == 0)
-                                                <option value="{{ $category->id }}" {{ $category->id == $category_item->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                                                <option value="{{ $category->id }}" {{ $category->id == ($category_item->parent->id ?? '') ? 'selected' : '' }}>{{ $category->name }}</option>
                                             @else
-                                                <option value="{{ $category->id }} {{ $category->id == $category_item->id ? 'selected' : '' }}">{{ '-- '.$category->name }}</option>
+                                                <option value="{{ $category->id }} {{ $category->id == ($category_item->parent->id ?? '') ? 'selected' : '' }}">{{ '-- '.$category->name }}</option>
                                             @endif
                                         @endforeach
                                     </select>
@@ -76,7 +76,7 @@
                                     <label for="image" style="cursor: pointer;"><img src="{{ old('image') ?? (!empty($category_item->image) ? asset('uploads/admin/categories/'.$category_item->image) : asset( 'backend/assets/images/avatars/no_image.png')) }}" class="img-fluid" width="100px" alt="image" id="blah"></label>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary px-2"><i class="fadeIn animated bx bx-plus"></i> Create Category</button>
+                                    <button type="submit" class="btn btn-primary px-2"><i class="fadeIn animated bx bx-plus"></i> Update Category</button>
                                 </div>
                             </form>
                         </div>

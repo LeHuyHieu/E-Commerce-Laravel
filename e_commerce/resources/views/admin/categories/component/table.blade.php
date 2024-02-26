@@ -10,10 +10,10 @@
     </tr>
     </thead>
     <tbody>
-    @foreach($categories as $category)
+    @foreach($categories as $key => $category)
         <tr>
             <td class="text-center"><input type="checkbox" class="form-check-input" id="checkItem{{ $category->id }}"></td>
-            <td class="text-center">{{ $category->id }}</td>
+            <td class="text-center">{{ $key + 1 }}</td>
             <td class="text-center">{!! (!empty($category->image)) ? '<img width="30px" class="img-fluid" src="'.asset('uploads/admin/categories/'.$category->image).'">' : 'No Image' !!}</td>
             <td class="text-center">{{ $category->name }}</td>
             <td class="text-center">{{ $category->parent->name ?? '' }}</td>

@@ -89,4 +89,4 @@ Route::get('/sign-up', [FrontendController::class, 'SignUp'])->name('customer.si
 Route::get('/sign-in', [FrontendController::class, 'SignIn'])->name('customer.sign_in');
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

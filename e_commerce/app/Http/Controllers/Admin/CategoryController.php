@@ -5,19 +5,43 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Categories;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Yoeunes\Toastr\Facades\Toastr;
 
 class CategoryController extends Controller
 {
+    public function __construct()
+    {
+
+    }
+
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $title = 'Table Categories';
-        $categories = Categories::paginate(2);
-        return view('admin.categories.index', compact('title', 'categories'));
+
+        //filter
+        $categories = Categories::where('status', 1);
+        if (!empty($request->title))
+        {
+            $title = $request->title;
+            $categories = $categories->where(function($query) use ($title) {
+                $query->where('name', 'like', '%'.$title.'%');
+                $query->orWhere('slug', 'like', '%'.$title.'%');
+            });
+        }
+
+        if (!empty($request->category_id))
+        {
+            $category_id = $request->category_id;
+            $categories = $categories->where('parent_id', '=', $category_id);
+        }
+
+        $categories = $categories->paginate(2)->withQueryString();
+
+        $allCategories = Categories::all();
+
+        return view('admin.categories.index', compact('title', 'categories', 'allCategories'));
     }
 
     /**
@@ -38,7 +62,7 @@ class CategoryController extends Controller
         $request->validate([
             'name' => 'required|string',
             'parent_id' => 'numeric',
-            'slug' => 'string',
+            'slug' => 'required|string',
             'image' => 'image|mimes:jpeg,jpg,png,gif,svg|max:10000'
         ]);
 
@@ -53,8 +77,11 @@ class CategoryController extends Controller
             $data['image'] = $fileName;
         }
         Categories::create($data);
-        Toastr::success('Insert successfully!', 'Success', ['closeButton' => true]);
-        return redirect()->route('admin.categories.index');
+        $notification = array(
+            'message' => 'Create category successfully',
+            'alert-type' => 'success'
+        );
+        return redirect()->route('admin.categories.index')->with($notification);
     }
 
     /**
@@ -99,8 +126,11 @@ class CategoryController extends Controller
             $data->image = $fileName;
         }
         $data->save();
-        Toastr::success('Edit successfully!','Success', ['closeButton' => true]);
-        return redirect()->route('admin.categories.index');
+        $notification = array(
+            'message' => 'Update category successfully',
+            'alert-type' => 'success'
+        );
+        return redirect()->route('admin.categories.index')->with($notification);
     }
 
     /**
@@ -109,7 +139,10 @@ class CategoryController extends Controller
     public function destroy(string $id)
     {
         Categories::find($id)->delete();
-//        Toastr::success('Delete successfully!', 'Success', ['closeButton' => true]);
-        return redirect()->route('admin.categories.index');
+        $notification = array(
+            'message' => 'Delete category successfully',
+            'alert-type' => 'success'
+        );
+        return redirect()->route('admin.categories.index')->with($notification);
     }
 }

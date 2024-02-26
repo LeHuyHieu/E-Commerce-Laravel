@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Categories extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'parent_id', 'slug', 'image'];
+    protected $fillable = ['name', 'parent_id', 'slug', 'image', 'status'];
+
+    protected $attributes = [
+        'status' => 1,
+    ];
 
     public function parent()
     {
