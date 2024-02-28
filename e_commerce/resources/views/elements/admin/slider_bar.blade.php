@@ -38,6 +38,12 @@
                 <div class="menu-title">Table Categories</div>
             </a>
         </li>
+        <li>
+            <a href="{{ route('admin.products.index') }}">
+                <div class="parent-icon"><i class='fadeIn animated bx bx-table'></i></div>
+                <div class="menu-title">Table Products</div>
+            </a>
+        </li>
     </ul>
     <!--end navigation-->
 </div>

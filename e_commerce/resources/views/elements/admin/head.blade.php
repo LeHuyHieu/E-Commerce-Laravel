@@ -30,4 +30,5 @@
 <!-- toastr -->
 <link href="{{ asset('backend/assets/plugins/toastr/toastr.min.css') }}" rel="stylesheet">
 <!-- end toastr -->
+<link href="{{ asset('backend/assets/custom/custom.css') }}" rel="stylesheet">
 <title>{{ (isset($title) && $title != '') ? $title : 'Dashboard' }}</title>

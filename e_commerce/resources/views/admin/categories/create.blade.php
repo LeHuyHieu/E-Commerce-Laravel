@@ -38,7 +38,7 @@
                                 @endif
                                 <div class="col-md-7">
                                     <label for="inputName" class="form-label">Category Name</label>
-                                    <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" id="inputName">
+                                    <input type="text" class="form-control get-slug @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" id="inputName">
                                     @error('name')
                                         <span class="invalid-feedback">{{ $message }}</span>
                                     @enderror

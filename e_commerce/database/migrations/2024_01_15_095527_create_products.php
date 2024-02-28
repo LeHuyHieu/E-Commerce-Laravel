@@ -13,22 +13,20 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('sku', 50)->nullable();
             $table->unsignedBigInteger('category_id')->default(0);
-            $table->string('name', 255)->nullable();
-            $table->string('sku', 255)->nullable();
-            $table->string('image', 255)->nullable();
-            $table->json('list_images', 400)->nullable();
-            $table->string('description', 500)->nullable();
+            $table->string('name', 255);
+            $table->string('image', 255);
+            $table->json('list_image');
+            $table->text('description');
             $table->integer('price')->default(0);
             $table->integer('quantity')->default(0);
-            $table->unsignedBigInteger('discount_id')->default(0);
-            $table->unsignedBigInteger('inventory_id')->default(0);
+            $table->string('product_type')->default('default');
+            $table->decimal('discount_percent', 5, 2)->nullable();
+            $table->dateTime('time_sale')->nullable();
             $table->boolean('is_visible')->default(true);
             $table->timestamps();
-            $table->softDeletes()->nullable();
 
-            $table->foreign('discount_id')->references('id')->on('discounts');
-            $table->foreign('inventory_id')->references('id')->on('inventorys');
             $table->foreign('category_id')->references('id')->on('categories');
         });
     }

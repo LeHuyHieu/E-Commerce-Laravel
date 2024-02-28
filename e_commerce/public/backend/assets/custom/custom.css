@@ -1,0 +1,24 @@
+.list-image .form-group {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.list-image .form-group .btn-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+}
+.list-image .form-group .btn-remove i {
+    font-size: 10px;
+}

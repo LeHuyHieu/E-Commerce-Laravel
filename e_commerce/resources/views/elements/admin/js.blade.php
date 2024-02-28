@@ -14,6 +14,8 @@
 <script src="{{ asset('backend/assets/plugins/jquery-knob/excanvas.js') }}"></script>
 <script src="{{ asset('backend/assets/plugins/jquery-knob/jquery.knob.js') }}"></script>
 <script src="{{ asset('backend/assets/plugins/select2/js/select2.min.js') }}"></script>
+<!-- tinymce -->
+<script src="{{ asset('backend/assets/plugins/tinymce/tinymce.min.js') }}"></script>
 <script>
     $(function() {
         $(".knob").knob();
