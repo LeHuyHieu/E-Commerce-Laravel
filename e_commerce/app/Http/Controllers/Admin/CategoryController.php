@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Categories;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -18,10 +18,10 @@ class CategoryController extends Controller
      */
     public function index(Request $request)
     {
-        $title = 'Table Categories';
+        $title = 'Table Category';
 
         //filter
-        $categories = Categories::where('status', 1);
+        $categories = Category::where('status', 1);
         if (!empty($request->title))
         {
             $title = $request->title;
@@ -37,9 +37,9 @@ class CategoryController extends Controller
             $categories = $categories->where('parent_id', '=', $category_id);
         }
 
-        $categories = $categories->paginate(2)->withQueryString();
+        $categories = $categories->paginate(6)->withQueryString();
 
-        $allCategories = Categories::all();
+        $allCategories = Category::all();
 
         return view('admin.categories.index', compact('title', 'categories', 'allCategories'));
     }
@@ -50,7 +50,7 @@ class CategoryController extends Controller
     public function create()
     {
         $title = 'Create Category';
-        $categories = Categories::all();
+        $categories = Category::all();
         return view('admin.categories.create', compact('title', 'categories'));
     }
 
@@ -73,10 +73,10 @@ class CategoryController extends Controller
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $fileName = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('uploads/admin/categories'), $fileName);
+            $file->move(public_path('uploads/categories'), $fileName);
             $data['image'] = $fileName;
         }
-        Categories::create($data);
+        Category::create($data);
         $notification = array(
             'message' => 'Create category successfully',
             'alert-type' => 'success'
@@ -98,8 +98,8 @@ class CategoryController extends Controller
     public function edit(string $id)
     {
         $title = 'Edit Category';
-        $categories = Categories::all();
-        $category_item = Categories::find($id);
+        $categories = Category::all();
+        $category_item = Category::find($id);
         return view('admin.categories.edit', compact('title', 'categories', 'category_item'));
     }
 
@@ -114,15 +114,15 @@ class CategoryController extends Controller
             'slug' => 'string',
             'image' => 'image|mimes:jpeg,jpg,png,gif,svg|max:10000'
         ]);
-        $data = Categories::find($id);
+        $data = Category::find($id);
         $data->name = $request->name;
         $data->parent_id = $request->parent_id;
         $data->slug = $request->slug;
         if ($request->hasFile('image')) {
             $file = $request->file('image');
-            @unlink('uploads/admin/categories/'.$data->image);
+            @unlink('uploads/categories/'.$data->image);
             $fileName = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('uploads/admin/categories'), $fileName);
+            $file->move(public_path('uploads/categories'), $fileName);
             $data->image = $fileName;
         }
         $data->save();
@@ -138,7 +138,7 @@ class CategoryController extends Controller
      */
     public function destroy(string $id)
     {
-        Categories::find($id)->delete();
+        Category::find($id)->delete();
         $notification = array(
             'message' => 'Delete category successfully',
             'alert-type' => 'success'

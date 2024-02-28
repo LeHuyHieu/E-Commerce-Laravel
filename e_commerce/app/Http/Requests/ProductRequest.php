@@ -27,11 +27,11 @@ class ProductRequest extends FormRequest
             'product_type' => 'required|string',
             'description' => 'required|min:5',
             'image' => 'mimes:jpeg,jpg,png,gif,svg|required|max:10000',
-            'price' => 'required|numeric',
+            'price' => 'required',
             'quantity' => 'required|numeric',
             'list_image' => 'required|array',
             'discount_percent' => 'numeric|nullable',
-            'time_sale' => 'nullable|date_format:Y-m-d H:i:s'
+            'time_sale' => 'nullable|date_format:Y-m-d\TH:i'
         ];
     }
 

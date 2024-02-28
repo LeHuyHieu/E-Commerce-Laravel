@@ -72,21 +72,21 @@
                                 </div>
                                 <div class="col-md-3 ms-auto col-12 show-discount-percent d-none">
                                     <label for="" class="form-label">Phần trăm giảm giá</label>
-                                    <input type="text" class="form-control @error('discount_percent') is-invalid @enderror" name="discount_percent" placeholder="Vd: 18.9">
+                                    <input type="text" class="form-control @error('discount_percent') is-invalid @enderror" name="discount_percent" {{ old('discount_percent') }} placeholder="Vd: 18.9">
                                     @error('discount_percent')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="col-md-3 col-12 show-sale-product d-none">
                                     <label for="" class="form-label">Thời gian sale</label>
-                                    <input type="datetime-local" class="form-control @error('time_sale') is-invalid @enderror" name="time_sale">
+                                    <input type="datetime-local" class="form-control @error('time_sale') is-invalid @enderror" {{ old('time_sale') }} name="time_sale">
                                     @error('time_sale')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="col-md-12">
                                     <label for="description" class="form-label">Mô tả</label>
-                                    <textarea id="description" class="text-editor @error('description') is-invalid @enderror" name="description" placeholder="Mô tả sản phẩm"></textarea>
+                                    <textarea id="description" class="text-editor @error('description') is-invalid @enderror" name="description" placeholder="Mô tả sản phẩm">{{ old('description') }}</textarea>
                                     @error('description')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
                                     @enderror
@@ -94,7 +94,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="image" class="form-label">Ảnh</label>
-                                        <input type="file" class="form-control img_inp @error('image') is-invalid @enderror" name="image">
+                                        <input type="file" class="form-control img_inp @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}">
                                         @error('image')
                                             <span class="invalid-feedback d-block">{{ $message }}</span>
                                         @enderror
@@ -104,7 +104,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="price" class="form-label">Giá thành</label>
-                                        <input type="text" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" id="price" name="price" class="form-control @error('price') is-invalid @enderror" placeholder="Vd: 130.000 VND">
+                                        <input type="text" data-type="currency" id="price" name="price" class="form-control @error('price') is-invalid @enderror" value="{{ old('price') }}" placeholder="Vd: 130.000 VND">
                                         @error('price')
                                             <span class="invalid-feedback d-block">{{ $message }}</span>
                                         @enderror
@@ -113,7 +113,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="quantity" class="form-label">Số lượng</label>
-                                        <input type="text" id="quantity" name="quantity" class="form-control @error('quantity') is-invalid @enderror" placeholder="Số lượng tồn">
+                                        <input type="text" id="quantity" name="quantity" class="form-control @error('quantity') is-invalid @enderror" value="{{ old('quantity') }}" placeholder="Số lượng tồn">
                                         @error('quantity')
                                             <span class="invalid-feedback d-block">{{ $message }}</span>
                                         @enderror

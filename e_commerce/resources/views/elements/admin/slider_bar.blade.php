@@ -41,7 +41,13 @@
         <li>
             <a href="{{ route('admin.products.index') }}">
                 <div class="parent-icon"><i class='fadeIn animated bx bx-table'></i></div>
-                <div class="menu-title">Table Products</div>
+                <div class="menu-title">Table Product</div>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <div class="parent-icon"><i class='fadeIn animated bx bx-table'></i></div>
+                <div class="menu-title">Table Attribute</div>
             </a>
         </li>
     </ul>

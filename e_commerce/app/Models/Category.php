@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Categories extends Model
+class Category extends Model
 {
     use HasFactory;
     protected $fillable = ['name', 'parent_id', 'slug', 'image', 'status'];
@@ -16,6 +16,6 @@ class Categories extends Model
 
     public function parent()
     {
-        return $this->belongsTo(Categories::class, 'parent_id');
+        return $this->belongsTo(Category::class, 'parent_id');
     }
 }

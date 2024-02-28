@@ -379,7 +379,7 @@
         ]
     });
 
-    /*------ Categories slider 1 ----*/
+    /*------ Category slider 1 ----*/
     $(".categories-slider-1").slick({
         slidesToShow: 6,
         slidesToScroll: 1,
