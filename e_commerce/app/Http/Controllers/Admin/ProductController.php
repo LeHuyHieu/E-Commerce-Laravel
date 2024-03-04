@@ -22,8 +22,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $title = "Products";
-//        $products = $this->products->paginate(2)->withQueryString();
-        $products = Product::with('sizes','colors','variants')->paginate($this->limit)->withQueryString();
+        $products = Product::with('sizes','colors','variants', 'categories')->paginate($this->limit)->withQueryString();
         return view('admin.products.index', compact('title', 'products'));
     }
 
@@ -38,7 +37,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created resource in storage
      */
     public function store(ProductRequest $request)
     {

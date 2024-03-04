@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -62,13 +63,12 @@ class CategoryController extends Controller
         $request->validate([
             'name' => 'required|string',
             'parent_id' => 'numeric',
-            'slug' => 'required|string',
             'image' => 'image|mimes:jpeg,jpg,png,gif,svg|max:10000'
         ]);
 
         $data['name'] = $request->name;
         $data['parent_id'] = $request->parent_id;
-        $data['slug'] = $request->slug;
+        $data['slug'] = Str::of($request->name)->slug('-');
 
         if ($request->hasFile('image')) {
             $file = $request->file('image');
@@ -111,13 +111,12 @@ class CategoryController extends Controller
         $request->validate([
             'name' => 'required|string',
             'parent_id' => 'numeric',
-            'slug' => 'string',
             'image' => 'image|mimes:jpeg,jpg,png,gif,svg|max:10000'
         ]);
         $data = Category::find($id);
         $data->name = $request->name;
         $data->parent_id = $request->parent_id;
-        $data->slug = $request->slug;
+        $data->slug = Str::of($request->name)->slug('-');
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             @unlink('uploads/categories/'.$data->image);

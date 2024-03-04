@@ -9,7 +9,7 @@
                 <div class="ps-3">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0 p-0">
-                            <li class="breadcrumb-item"><a href="{{ route('admin.index') }}}"><i class="bx bx-home-alt"></i></a>
+                            <li class="breadcrumb-item"><a href="{{ route('admin.index') }}"><i class="bx bx-home-alt"></i></a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">Edit Category</li>
                         </ol>
@@ -61,22 +61,19 @@
                                     @enderror
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="slug" class="form-label">Slug</label>
-                                    <input type="text" id="slug" name="slug" value="{{ old('slug') ?? $category_item->slug }}" class="form-control @error('slug') is-invalid @enderror" />
-                                    @error('slug')
-                                        <span class="invalid-feedback">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="col-md-12">
                                     <label for="image" class="form-label">Image</label>
-                                    <input type="file" id="image" value="{{ old('image') ?? $category_item->image }}" class="form-control mb-3 @error('image') is-invalid @enderror" name="image" />
+                                    <input type="file" id="image" value="{{ old('image') ?? $category_item->image }}" class="form-control mb-3 @error('image') is-invalid @enderror" name="image"/>
                                     @error('image')
-                                        <span class="invalid-feedback">{{ $message }}</span>
+                                    <span class="invalid-feedback">{{ $message }}</span>
                                     @enderror
-                                    <label for="image" style="cursor: pointer;"><img src="{{ old('image') ?? (!empty($category_item->image) ? asset('uploads/admin/categories/'.$category_item->image) : asset( 'backend/assets/images/avatars/no_image.png')) }}" class="img-fluid" width="100px" alt="image" id="blah"></label>
+                                    <label for="image" style="cursor: pointer;">
+                                        <img src="{{ old('image') ?? (!empty($category_item->image) ? asset('uploads/admin/categories/'.$category_item->image) : asset( 'backend/assets/images/avatars/no_image.png')) }}" class="img-fluid" width="100px" alt="image" id="blah">
+                                    </label>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary px-2"><i class="fadeIn animated bx bx-plus"></i> Update Category</button>
+                                    <button type="submit" class="btn btn-primary px-2">
+                                        <i class="fadeIn animated bx bx-plus"></i> Update Category
+                                    </button>
                                 </div>
                             </form>
                         </div>

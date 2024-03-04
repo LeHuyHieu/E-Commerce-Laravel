@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('sku', 50)->nullable();
             $table->unsignedBigInteger('category_id')->default(0);
             $table->string('name', 255);
-            $table->string('image', 255);
+            $table->string('image_before', 255);
+            $table->string('image_after', 255);
             $table->json('list_image');
             $table->text('description');
             $table->integer('price')->default(0);
-            $table->integer('quantity')->default(0);
             $table->string('product_type')->default('default');
             $table->decimal('discount_percent', 5, 2)->nullable();
             $table->dateTime('time_sale')->nullable();

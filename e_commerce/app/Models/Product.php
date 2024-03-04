@@ -4,18 +4,21 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Category;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Product extends Model
 {
     use HasFactory;
+    protected $table = 'products';
 
-    protected $fillable = ['name', 'sku', 'category_id', 'image', 'list_image', 'description', 'price', 'quantity', 'product_type', 'discount_percent', 'time_sale', 'is_visible'];
+    protected $fillable = ['name', 'slug', 'sku', 'category_id', 'image_before', 'image_after', 'list_image', 'description', 'price', 'product_type', 'discount_percent', 'time_sale', 'is_visible'];
 
-    public function getNameCategoryId($id) {
-        return Category::find($id);
+    public function categories(): BelongsTo
+    {
+        return $this->belongsTo(Category::class, 'category_id');
     }
+
     public function colors(): HasMany
     {
         return $this->hasMany(ProductColor::class, 'product_id');

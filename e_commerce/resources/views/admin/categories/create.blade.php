@@ -60,13 +60,6 @@
                                     @enderror
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="slug" class="form-label">Slug</label>
-                                    <input type="text" id="slug" name="slug" value="{{ old('slug') }}" class="form-control @error('slug') is-invalid @enderror" />
-                                    @error('slug')
-                                        <span class="invalid-feedback">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                                <div class="col-md-12">
                                     <label for="image" class="form-label">Image</label>
                                     <input type="file" id="image" value="{{ old('image') }}" class="form-control mb-3 @error('image') is-invalid @enderror" name="image" />
                                     @error('image')
