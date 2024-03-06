@@ -47,7 +47,7 @@
                                             <h6 class="mb-0">Old Password</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <input type="text" required name="old_password" class="form-control @error('old_password') is-invalid @enderror" value="" />
+                                            <input type="text" value="{{ old('old_password') }}" name="old_password" class="form-control @error('old_password') is-invalid @enderror" />
                                             @error('old_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
@@ -59,7 +59,10 @@
                                             <h6 class="mb-0">New Password</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <input type="password" required name="new_password" class="form-control" value="" />
+                                            <input type="password" value="{{ old('new_password') }}" name="new_password" class="form-control @error('new_password') is-invalid @enderror" />
+                                            @error('new_password')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                     </div>
 
@@ -68,8 +71,8 @@
                                             <h6 class="mb-0">Confirm Password</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <input type="password" required name="confirm_password" class="form-control @error('new_password') is-invalid @enderror" value="" />
-                                            @error('new_password')
+                                            <input type="password" value="{{ old('confirm_password') }}" name="confirm_password" class="form-control @error('confirm_password') is-invalid @enderror" />
+                                            @error('confirm_password')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                         </div>

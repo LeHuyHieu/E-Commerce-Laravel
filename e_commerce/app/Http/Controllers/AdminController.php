@@ -51,21 +51,19 @@ class AdminController extends Controller
         $data = User::find($id);
         $data->name = $request->name;
         $data->phone = $request->phone;
-        $data->email = $request->email;
         $data->address = $request->address;
         if ($request->file('photo')) {
             $file = $request->file('photo');
-            @unlink('uploads/admin/images/'.$data->photo);
+            @unlink('uploads/avatar/'.$data->photo);
             $filename = date('YmdHi').$file->getClientOriginalName();
             $file->move(public_path('uploads/avatar'), $filename);
             $data->photo = $filename;
         }
         $data->save();
         $notification = [
-            'message' => 'Admin update profile successfully',
+            'message' => 'Cập nhật thông tin thành công',
             'alert-type' => 'success'
         ];
-        Toastr::success('Update data profile successfully!', 'Update', ['closeButton' => true]);
         return back()->with($notification);
     }
 
@@ -80,15 +78,21 @@ class AdminController extends Controller
     {
         $request->validate([
             'old_password' => 'required|max:255',
-            'new_password' => 'required|required_with:confirm_password|same:confirm_password|max:255|min:3',
-            'confirm_password' => 'required|min:3',
+            'new_password' => 'required|max:255|min:3',
+            'confirm_password' => 'required|min:3|same:new_password|required_with:confirm_password',
         ]);
         if (!Hash::check($request->old_password, auth()->user()->password)) {
-            Toastr::warning('Update password failed', 'Password', ['closeButton' => true]);
-            return back();
+            $notification = [
+                'message' => 'Cập nhật mật khẩu thất bại',
+                'alert-type' => 'warning'
+            ];
+            return back()->with($notification)->withInput();
         }
         User::whereId(auth()->user()->id)->update(['password' => Hash::make($request->new_password)]);
-        Toastr::success('Update password successfully!', 'Password', ['closeButton' => true]);
-        return back();
+        $notification = [
+            'message' => 'Cập nhật mật khẩu thành công',
+            'alert-type' => 'success'
+        ];
+        return back()->with($notification);
     }
 }

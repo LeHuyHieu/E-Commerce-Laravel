@@ -1,5 +1,5 @@
 <div class="filter_category">
-    <form action="" method="" class="row justify-content-end">
+    <form action="{{ route('admin.categories.index') }}" method="get" class="row justify-content-end">
         <div class="col-md-3 col-sm-4 col-xs-12 col-12">
             <select class="single-select mb-3" name="category_id">
                 <option value="" selected>Choose...</option>

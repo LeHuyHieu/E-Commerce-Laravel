@@ -36,7 +36,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="{{ ($data_user['photo'] != '') ? asset( 'uploads/admin/images/'.$data_user['photo'] ) : asset( 'backend/assets/images/avatars/no_image.png') }}" alt="Admin" class="img-fluid rounded-circle p-1 border border-primary" width="110">
+                                        <img src="{{ ($data_user['photo'] != '') ? asset( 'uploads/avatar/'.$data_user['photo'] ) : asset( 'backend/assets/images/avatars/no_image.png') }}" alt="Admin" class="img-fluid rounded-circle p-1 border border-primary" width="110">
                                         <div class="mt-3">
                                             <h4>{{ $data_user['name'] }}</h4>
                                             <p class="text-secondary mb-1">{{ $data_user['email'] }}</p>
@@ -104,7 +104,7 @@
                                         <div class="col-sm-9 text-secondary">
                                             <input type="file" name="photo" id="changeImage" class="form-control mb-3" onchange="document.getElementById('photo_image').src = window.URL.createObjectURL(this.files[0])">
                                             <label for="changeImage" style="cursor: pointer">
-                                                <img src="{{ ($data_user['photo'] != '') ? asset( 'uploads/admin/images/'.$data_user['photo'] ) : asset( 'backend/assets/images/avatars/no_image.png') }}" id="photo_image" class="img-fluid rounded-circle p-1 border border-primary" width="110" alt="">
+                                                <img src="{{ ($data_user['photo'] != '') ? asset( 'uploads/avatar/'.$data_user['photo'] ) : asset( 'backend/assets/images/avatars/no_image.png') }}" id="photo_image" class="img-fluid rounded-circle p-1 border border-primary" width="110" alt="">
                                             </label>
                                         </div>
                                     </div>

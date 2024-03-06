@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Color;
 use App\Models\Size;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
 
 class ProductAttributeController extends Controller
 {
@@ -14,12 +15,12 @@ class ProductAttributeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $title = "Product Attribute";
-        $sizes = Size::paginate(self::LIMIT)->withQueryString();
-        $colors = Color::paginate(self::LIMIT)->withQueryString();
-        return view('admin.product_attr.index', compact('title', 'colors', 'sizes'));
+        $sizes = Size::where('name', 'like', "%$request->search%")->paginate(self::LIMIT);
+        $colors = Color::where('name', 'like', "%$request->search%")->paginate(self::LIMIT);
+        return view('admin.product_attr.index', compact('title', 'sizes', 'colors'));
     }
 
     /**
@@ -52,12 +53,12 @@ class ProductAttributeController extends Controller
 
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
-        }else {
+        } else {
             $data = $validator->validated();
 
             if (!empty($data['color'])) {
                 Color::create(['name' => $data['color']]);
-            }elseif (!empty($data['size'])) {
+            } elseif (!empty($data['size'])) {
                 Size::create(['name' => $data['size']]);
             }
 
@@ -108,7 +109,7 @@ class ProductAttributeController extends Controller
 
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
-        }else {
+        } else {
             $data = $validator->validated();
 
             $color = Color::find($id);
@@ -163,7 +164,7 @@ class ProductAttributeController extends Controller
 
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
-        }else {
+        } else {
             $data = $validator->validated();
 
             $color = Size::find($id);

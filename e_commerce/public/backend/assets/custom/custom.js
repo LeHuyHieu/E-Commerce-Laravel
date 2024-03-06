@@ -127,31 +127,12 @@ $(function () {
         $(this).closest('.form-group').remove()
     })
 
-    $("input[data-type='currency']").on({
+    $(document).on({
         keyup: function () {
             formatCurrency($(this));
         },
         blur: function () {
             formatCurrency($(this), "blur");
         }
-    });
-
-    if ($('#inputDiscount').length) {
-        $('#inputDiscount').on('change', function() {
-            switch ($('#inputDiscount').val()) {
-                case 'percent':
-                    $('.show-discount-percent').removeClass('d-none')
-                    break;
-                case 'sale':
-                    $('.show-discount-percent').removeClass('d-none')
-                    $('.show-sale-product').removeClass('d-none')
-                    break;
-                default:
-                    $('.show-discount-percent').addClass('d-none')
-                    $('.show-sale-product').addClass('d-none')
-                    break;
-            }
-        })
-    }
-
+    }, "input[data-type='currency']");
 });
