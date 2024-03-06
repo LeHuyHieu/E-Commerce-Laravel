@@ -91,17 +91,27 @@
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="image" class="form-label">Ảnh</label>
-                                        <input type="file" class="form-control img_inp @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}">
-                                        @error('image')
+                                        <label for="image_before" class="form-label">Ảnh trước</label>
+                                        <input type="file" class="form-control img_inp @error('image_before') is-invalid @enderror" name="image_before" value="{{ old('image_before') }}">
+                                        @error('image_before')
                                             <span class="invalid-feedback d-block">{{ $message }}</span>
                                         @enderror
                                         <img src="{{ asset('backend/assets/images/avatars/no_image.png') }}" width="100px" class="mt-3 show_image rounded" alt="">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="image_after" class="form-label">Ảnh sau</label>
+                                        <input type="file" class="form-control img_inp @error('image_after') is-invalid @enderror" name="image_after" value="{{ old('image_after') }}">
+                                        @error('image_after')
+                                        <span class="invalid-feedback d-block">{{ $message }}</span>
+                                        @enderror
+                                        <img src="{{ asset('backend/assets/images/avatars/no_image.png') }}" width="100px" class="mt-3 show_image rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="price" class="form-label">Giá thành</label>
                                         <input type="text" data-type="currency" id="price" name="price" class="form-control @error('price') is-invalid @enderror" value="{{ old('price') }}" placeholder="Vd: 130.000 VND">
@@ -110,7 +120,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="quantity" class="form-label">Số lượng</label>
                                         <input type="text" id="quantity" name="quantity" class="form-control @error('quantity') is-invalid @enderror" value="{{ old('quantity') }}" placeholder="Số lượng tồn">

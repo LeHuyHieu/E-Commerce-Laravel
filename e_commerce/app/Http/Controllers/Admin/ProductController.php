@@ -11,10 +11,9 @@ use App\Http\Requests\ProductRequest;
 class ProductController extends Controller
 {
     private $products;
-    public $limit = 15;
+    const LIMIT = 15;
     public function __construct()
     {
-        $this->products = new Product;
     }
     /**
      * Display a listing of the resource.
@@ -22,7 +21,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $title = "Products";
-        $products = Product::with('sizes','colors','variants', 'categories')->paginate($this->limit)->withQueryString();
+        $products = Product::with('sizes','colors','variants', 'categories')->paginate(self::LIMIT)->withQueryString();
         return view('admin.products.index', compact('title', 'products'));
     }
 
@@ -41,35 +40,21 @@ class ProductController extends Controller
      */
     public function store(ProductRequest $request)
     {
-        $sku = '#'.date('His').rand(100, 999);
-        $this->products->sku = $sku;
-        $this->products->name = $request->name;
-        $this->products->category_id = $request->category_id;
-        $this->products->product_type = $request->product_type;
-        $this->products->discount_percent = $request->discount_percent;
-        $this->products->time_sale = $request->time_sale;
-        $this->products->description = $request->description;
-        $this->products->price = preg_replace("/[^0-9]/", "", $request->price);
-        $this->products->quantity = $request->quantity;
-        if ($request->hasFile('image')) {
-            $file = $request->file('image');
-            $file_name = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('uploads/products'), $file_name);
-            $this->products->image = $file_name;
+        $data = $request->validated();
+        $data['sku'] = '#'.date('His').rand(100, 999);
+        $data['price'] = preg_replace("/[^0-9]/", "", $data['price']);
+        if ($request->hasFile('image_before')) {
+            $data['image_before'] = $this->uploadImage($request->file('image_before'));
         }
-        $list_image = [];
+
+        if ($request->hasFile('image_after')) {
+            $data['image_after'] = $this->uploadImage($request->file('image_after'));
+        }
+
         if ($request->hasFile('list_image')) {
-            foreach ($request->list_image as $item) {
-                if ($item->isValid()) {
-                    $item_file_name = date('YmdHi').$item->getClientOriginalName();
-                    $item->move(public_path('uploads/products'), $item_file_name);
-                    $list_image[] = $item_file_name;
-                }
-            }
-            $json = json_encode($list_image);
-            $this->products->list_image = $json;
+            $data['list_image'] = $this->uploadListImages($request->file('list_image'));
         }
-        $this->products->save();
+        Product::create($data);
         $notification = array(
             'message' => 'Create product successfully',
             'alert-type' => 'success'
@@ -77,6 +62,27 @@ class ProductController extends Controller
         return redirect()->route('admin.products.index')->with($notification);
     }
 
+    private function uploadImage($file)
+    {
+        $fileName = date('YmdHi').$file->getClientOriginalName();
+        $file->move(public_path('uploads/products'), $fileName);
+        return $fileName;
+    }
+
+    private function uploadListImages($files)
+    {
+        $listImage = [];
+
+        foreach ($files as $file) {
+            if ($file->isValid()) {
+                $fileName = date('YmdHi').$file->getClientOriginalName();
+                $file->move(public_path('uploads/products'), $fileName);
+                $listImage[] = $fileName;
+            }
+        }
+
+        return json_encode($listImage);
+    }
     /**
      * Display the specified resource.
      */

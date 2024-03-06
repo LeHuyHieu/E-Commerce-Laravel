@@ -45,7 +45,7 @@
             </a>
         </li>
         <li>
-            <a href="/">
+            <a href="{{ route('admin.product_attr.index') }}">
                 <div class="parent-icon"><i class='fadeIn animated bx bx-table'></i></div>
                 <div class="menu-title">Table Attribute</div>
             </a>

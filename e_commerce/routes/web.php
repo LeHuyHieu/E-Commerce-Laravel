@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ProductAttributeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,16 +42,6 @@ Route::post('/email/verification-notification', function (Request $request) {
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 //end verify email
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
 //admin
 Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->name('admin.')->controller(AdminController::class)->group(function () {
     Route::get('dashboard', 'index')->name('index');
@@ -61,8 +52,11 @@ Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->name('ad
     //update password
     Route::get('change-password', 'AdminChangePassword')->name('change_password');
     Route::post('change-password', 'AdminUpdatePassword')->name('update_password');
-    //routes resource
-    //router category
+
+
+    //--routes resource
+
+    //router categories
     Route::resource('categories', CategoryController::class);
     Route::prefix('categories')->name('categories.')->controller(CategoryController::class)->group(function () {
         Route::get('/', 'index')->name('index');
@@ -73,7 +67,7 @@ Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->name('ad
         Route::delete('destroy/{id}', 'destroy')->name('destroy');
     });
 
-    //router product
+    //router products
     Route::resource('products', ProductController::class);
     Route::prefix('products')->name('products.')->controller(ProductController::class)->group(function () {
         Route::get('/', 'index')->name('index');
@@ -82,6 +76,20 @@ Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->name('ad
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::put('update/{id}', 'update')->name('update');
         Route::delete('destroy/{id}', 'destroy')->name('destroy');
+    });
+
+    //product attributes
+    Route::resource('product-attributes', ProductAttributeController::class);
+    Route::prefix('product-attributes')->name('product_attr.')->controller(ProductAttributeController::class)->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('create', 'create')->name('create');
+        Route::post('create', 'store')->name('store');
+        Route::get('edit-color/{id}', 'edit_color')->name('edit_color');
+        Route::get('edit-size/{id}', 'edit_size')->name('edit_size');
+        Route::put('update-color/{id}', 'update_color')->name('update_color');
+        Route::put('update-size/{id}', 'update_size')->name('update_size');
+        Route::delete('destroy-color/{id}', 'destroy_color')->name('destroy_color');
+        Route::delete('destroy-size/{id}', 'destroy_size')->name('destroy_size');
     });
 });
 //end admin

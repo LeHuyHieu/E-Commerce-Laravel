@@ -26,7 +26,7 @@
                 </div>
             </td>
             <td>{{ $product->categories->name }}</td>
-            <td><h6 class="mb-1 font-14">{{ number_format($product->price) .' VND' }}</h6></td>
+            <td><h6 class="mb-1 font-14">{{ number_format($product->price) .' đ' }}</h6></td>
             <td><div class="badge rounded-pill bg-light-info text-info w-100">Sale</div></td>
             <td>
                 <a href="{{ route('admin.categories.edit', $product->id) }}" class="btn-primary btn btn-sm"><i class="fadeIn animated bx bx-edit"></i></a>

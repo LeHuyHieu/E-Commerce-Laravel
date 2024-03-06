@@ -16,7 +16,6 @@
                     </nav>
                 </div>
                 <div class="ms-auto">
-                    <button class="btn btn-danger btn-sm"><i class="fadeIn animated bx bx-trash"></i> Delete</button>
                     <a href="{{ route('admin.categories.create') }}" class="btn btn-primary btn-sm"><i
                             class="fadeIn animated bx bx-plus"></i> Create</a>
                 </div>

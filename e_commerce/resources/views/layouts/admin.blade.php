@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     @include('elements.admin.head')
+    @yield('custom_css')
 </head>
 <body>
     <!--wrapper-->
@@ -12,5 +13,6 @@
         @include('elements.admin.footer')
     </div>
     @include('elements.admin.js')
+    @yield('custom_js')
 </body>
 </html>

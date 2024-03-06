@@ -1,7 +1,6 @@
 <table id="table" class="table table-striped table-bordered" style="width:100%">
     <thead>
     <tr>
-        <th class="text-center" style="width: 50px;"><input type="checkbox" class="form-check-input" id="checkAll"></th>
         <th class="text-center" style="width: 50px;">Id</th>
         <th class="text-center">Image</th>
         <th class="text-center">Category name</th>
@@ -12,7 +11,6 @@
     <tbody>
     @foreach($categories as $key => $category)
         <tr>
-            <td class="text-center"><input type="checkbox" class="form-check-input" id="checkItem{{ $category->id }}"></td>
             <td class="text-center">{{ $key + 1 }}</td>
             <td class="text-center">{!! (!empty($category->image)) ? '<img width="30px" class="img-fluid" src="'.asset('uploads/categories/'.$category->image).'">' : 'No Image' !!}</td>
             <td class="text-center">{{ $category->name }}</td>

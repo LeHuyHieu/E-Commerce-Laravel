@@ -26,7 +26,8 @@ class ProductRequest extends FormRequest
             'category_id' => 'required|numeric',
             'product_type' => 'required|string',
             'description' => 'required|min:5',
-            'image' => 'mimes:jpeg,jpg,png,gif,svg|required|max:10000',
+            'image_before' => 'mimes:jpeg,jpg,png,gif,svg|required|max:10000',
+            'image_after' => 'mimes:jpeg,jpg,png,gif,svg|required|max:10000',
             'price' => 'required',
             'quantity' => 'required|numeric',
             'list_image' => 'required|array',
@@ -55,12 +56,13 @@ class ProductRequest extends FormRequest
             'category_id' => 'Danh mục',
             'product_type' => 'Loại sản phẩm',
             'description' => 'Mô tả',
-            'image' => 'Hình ảnh',
+            'image_before' => 'Ảnh trước',
+            'image_after' => 'Ảnh sau',
             'price' => 'Giá',
             'quantity' => 'Số lượng',
             'list_image' => 'Ảnh chi tiết',
             'discount_percent' => 'Phần trăm giảm giá',
-            'time_sale' => 'Thời gian giảm giá'
+            'time_sale' => 'Thời gian giảm giá',
         ];
     }
 }
