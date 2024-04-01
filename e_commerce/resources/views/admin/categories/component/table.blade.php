@@ -12,7 +12,7 @@
     @foreach($categories as $key => $category)
         <tr>
             <td class="text-center">{{ $key + 1 }}</td>
-            <td class="text-center">{!! (!empty($category->image)) ? '<img width="30px" class="img-fluid" src="'.asset('uploads/categories/'.$category->image).'">' : 'No Image' !!}</td>
+            <td class="text-center">{!! (!empty($category->image)) ? '<img width="30px" class="img-fluid" src="'.asset('images/categories/'.$category->image).'">' : 'No Image' !!}</td>
             <td class="text-center">{{ $category->name }}</td>
             <td class="text-center">{{ $category->parent->name ?? '' }}</td>
             <td class="text-center">

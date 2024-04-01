@@ -52,18 +52,18 @@
                                     <div class="col-md-6">
                                         <div class="form-group mb-3">
                                             <label for="inputName" class="form-label">Tên sản phẩm</label>
-                                            <input type="text" class="form-control get-slug @error('name') is-invalid @enderror" placeholder="Tên sản phẩm" name="name" value="{{ old('name') }}" id="inputName">
+                                            <input type="text" class="form-control @error('name') is-invalid @enderror" placeholder="Tên sản phẩm" name="name" value="{{ old('name') }}" id="inputName">
                                             @error('name')
                                                 <span class="invalid-feedback">{{ $message }}</span>
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group mb-3">
                                             <label for="inputCategory" class="form-label">Danh mục</label>
                                             <select id="inputCategory" name="category_id"
                                                 class="single-select @error('category_id') is-invalid @enderror">
-                                                <option value="0" selected>Choose...</option>
+                                                <option value="" selected>Choose...</option>
                                                 @foreach ($categories as $category)
                                                     @if ($category['parent_id'] == 0)
                                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -78,17 +78,35 @@
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group mb-3">
                                             <label for="inputProductType" class="form-label">Kiểu sản phẩm</label>
                                             <select id="inputProductType" name="product_type" class="single-select @error('product_type') is-invalid @enderror">
-                                                <option value="0" selected>Default</option>
+                                                <option value="default" selected>Default</option>
                                                 <option value="hot">Hot</option>
                                                 <option value="sale">Sale</option>
                                                 <option value="new">New</option>
                                                 <option value="percent">Percent</option>
                                             </select>
-                                            @error('product_type')
+                                        </div>
+                                        @error('product_type')
+                                            <span class="invalid-feedback d-block">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group mb-3">
+                                            <label for="inputBranch" class="form-label">Branch</label>
+                                            <select id="inputBranch" name="branch_id"
+                                                class="single-select @error('branch_id') is-invalid @enderror">
+                                                @foreach ($branchs as $branch)
+                                                    @if ($branch['parent_id'] == 0)
+                                                        <option value="{{ $branch->id }}">{{ $branch->name }}</option>
+                                                    @else
+                                                        <option value="{{ $branch->id }}">{{ '-- ' . $branch->name }}</option>
+                                                    @endif
+                                                @endforeach
+                                            </select>
+                                            @error('branch_id')
                                                 <span class="invalid-feedback d-block">{{ $message }}</span>
                                             @enderror
                                         </div>
@@ -156,6 +174,9 @@
                                     <h6 class="mb-0 text-primary">Thông tin SP</h6>
                                 </div>
                                 <div class="card-body">
+                                    @error('additional_infos')
+                                        <span class="invalid-feedback d-block text-center">Vui long kiem tra lại thong tin</span>
+                                    @enderror
                                     <div class="row mb-3 position-relative product-info-item">
                                         <button type="button"
                                             class="btn text-danger btn-remove-product-info btn-sm radius-30"><i
@@ -163,13 +184,13 @@
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                                             <div class="form-group py-2">
                                                 <label for="" class="form-label">Thuộc tính</label>
-                                                <input type="text" name="key" class="form-control" placeholder="Vd: Màu sắc, ...">
+                                                <input type="text" name="additional_infos[key][]" class="form-control" placeholder="Vd: Màu sắc, ...">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                                             <div class="form-group py-2">
                                                 <label for="" class="form-label">Giá trị</label>
-                                                <input type="text" name="value" class="form-control" placeholder="Vd: Xanh, đỏ, tím, vàng, ...">
+                                                <input type="text" name="additional_infos[value][]" class="form-control" placeholder="Vd: Xanh, đỏ, tím, vàng, ...">
                                             </div>
                                         </div>
                                     </div>
@@ -193,40 +214,45 @@
                                     <button type="button" class="btn btn-remove-product-detail text-danger btn-sm radius-30"><i class="bx bx-x-circle"></i></button>
                                 </div>
                                 <div class="row">
+                                    @error('product_variants')
+                                        <span class="invalid-feedback d-block text-center">Vui long kiem tra lại thong tin</span>
+                                    @enderror
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                                         <div class="form-group mb-3">
                                             <label for="colorId" class="form-label">Màu</label>
-                                            <select name="color_id" id="colorId" class="form-select">
-                                                <option value="">Chọn màu</option>
-                                                <option value=""></option>
+                                            <select name="product_variants[color_id][]" id="colorId" class="form-select">
+                                                @foreach($colors as $color)
+                                                    <option value="{{ $color->id }}">{{ $color->name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                                         <div class="form-group mb-3">
                                             <label for="sizeId" class="form-label">Size</label>
-                                            <select name="size_id" id="sizeId" class="form-select">
-                                                <option value="">Chọn size</option>
-                                                <option value=""></option>
+                                            <select name="product_variants[size_id][]" id="sizeId" class="form-select">
+                                                @foreach($sizes as $size)
+                                                    <option value="{{ $size->id }}">{{ $size->name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                                         <div class="form-group mb-3">
-                                            <label for="quantity" class="form-label">Số lượng</label>
-                                            <input type="text" name="quantity" value="{{ old('quantity') }}" id="quantity" class="form-control" placeholder="Số lượng: 1">
+                                            <label class="form-label">Số lượng</label>
+                                            <input type="text" name="product_variants[quantity][]" class="form-control" placeholder="Số lượng: 1">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                                         <div class="form-group mb-3">
                                             <label for="priceVariant" class="form-label">Giá</label>
-                                            <input type="text" data-type="currency" id="priceVariant" name="price_variant[]" class="form-control @error('price_variant') is-invalid @enderror" value="{{ old('price_variant') }}" placeholder="Vd: 130.000 VND">
+                                            <input type="text" data-type="currency" id="priceVariant" name="product_variants[price][]" class="form-control" placeholder="Vd: 130.000 VND">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                                         <div class="form-group mb-3">
                                             <label for="imageVariant" class="form-label">Ảnh</label>
-                                            <input type="file" id="imageVariant" name="image_variant[]" class="form-control img_inp @error('image_variant') is-invalid @enderror" value="{{ old('image_variant') }}">
+                                            <input type="file" id="imageVariant" name="product_variants[image][]" class="form-control img_inp">
                                             <img src="{{ asset('backend/assets/images/avatars/no_image.png') }}" width="100px" class="mt-3 show_image rounded" alt="">
                                         </div>
                                     </div>
@@ -235,7 +261,7 @@
                         </div>
                         <div class="append-product-detail"></div>
                         {{-- end product detail --}}
-                        <div class="card border-top border-0 border-4 border-primary">
+                        <div class="card border-top border-0 border-4 border-primary position-sticky" style="bottom: 50px;">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="text-end py-3">
@@ -290,13 +316,13 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                 <div class="form-group py-2">
                     <label for="" class="form-label">Thuộc tính</label>
-                    <input type="text" name="key" class="form-control" placeholder="Vd: Màu sắc, ...">
+                    <input type="text" name="additional_infos[key][]" class="form-control" placeholder="Vd: Màu sắc, ...">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                 <div class="form-group py-2">
                     <label for="" class="form-label">Giá trị</label>
-                    <input type="text" name="value" class="form-control" placeholder="Vd: Xanh, đỏ, tím, vàng, ...">
+                    <input type="text" name="additional_infos[value][]" class="form-control" placeholder="Vd: Xanh, đỏ, tím, vàng, ...">
                 </div>
             </div>
         </div>
@@ -314,37 +340,39 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                         <div class="form-group mb-3">
                             <label for="colorId" class="form-label">Màu</label>
-                            <select name="color_id" id="colorId" class="form-select">
-                                <option value="">Chọn màu</option>
-                                <option value=""></option>
+                            <select name="product_variants[color_id][]" id="colorId" class="form-select">
+                                @foreach($colors as $color)
+                                    <option value="{{ $color->id }}">{{ $color->name }}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                         <div class="form-group mb-3">
                             <label for="sizeId" class="form-label">Size</label>
-                            <select name="size_id" id="sizeId" class="form-select">
-                                <option value="">Chọn size</option>
-                                <option value=""></option>
+                            <select name="product_variants[size_id][]" id="sizeId" class="form-select">
+                                @foreach($sizes as $size)
+                                    <option value="{{ $size->id }}">{{ $size->name }}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                         <div class="form-group mb-3">
-                            <label for="quantity" class="form-label">Số lượng</label>
-                            <input type="text" name="quantity" value="{{ old('quantity') }}" id="quantity" class="form-control" placeholder="Số lượng: 1">
+                            <label class="form-label">Số lượng</label>
+                            <input type="text" name="product_variants[quantity][]" class="form-control" placeholder="Số lượng: 1">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                         <div class="form-group mb-3">
                             <label for="priceVariant" class="form-label">Giá</label>
-                            <input type="text" data-type="currency" id="priceVariant" name="price_variant[]" class="form-control @error('price_variant') is-invalid @enderror" value="{{ old('price_variant') }}" placeholder="Vd: 130.000 VND">
+                            <input type="text" data-type="currency" id="priceVariant" name="product_variants[price][]" class="form-control" placeholder="Vd: 130.000 VND">
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                         <div class="form-group mb-3">
                             <label for="imageVariant" class="form-label">Ảnh</label>
-                            <input type="file" id="imageVariant" name="image_variant[]" class="form-control img_inp @error('image_variant') is-invalid @enderror" value="{{ old('image_variant') }}">
+                            <input type="file" id="imageVariant" name="product_variants[image][]" class="form-control img_inp" />
                             <img src="{{ asset('backend/assets/images/avatars/no_image.png') }}" width="100px" class="mt-3 show_image rounded" alt="">
                         </div>
                     </div>

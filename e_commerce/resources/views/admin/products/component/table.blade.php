@@ -18,7 +18,7 @@
             <td>
                 <div class="d-flex align-items-center">
                     <div class="recent-product-img">
-                        {!! (!empty($product->image_before)) ? '<img width="30px" class="img-fluid" src="'.asset('uploads/products/'.$product->image_before).'">' : 'No Image' !!}
+                        {!! (!empty($product->image_before)) ? '<img width="30px" class="img-fluid" src="'.asset('images/products/'.$product->image_before).'">' : 'No Image' !!}
                     </div>
                     <div class="ms-2">
                         <h6 class="mb-1 font-14">{{ $product->name }}</h6>
@@ -29,7 +29,7 @@
             <td><h6 class="mb-1 font-14">{{ number_format($product->price) .' đ' }}</h6></td>
             <td><div class="badge rounded-pill bg-light-info text-info w-100">Sale</div></td>
             <td>
-                <a href="{{ route('admin.categories.edit', $product->id) }}" class="btn-primary btn btn-sm"><i class="fadeIn animated bx bx-edit"></i></a>
+                <a href="{{ route('admin.products.edit', $product->id) }}" class="btn-primary btn btn-sm"><i class="fadeIn animated bx bx-edit"></i></a>
                 <form class="d-inline-block" method="post" action="{{ route('admin.products.destroy', $product->id) }}">
                     @csrf
                     @method('DELETE')

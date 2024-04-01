@@ -73,7 +73,7 @@ class CategoryController extends Controller
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $fileName = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('uploads/categories'), $fileName);
+            $file->move(public_path('images/categories'), $fileName);
             $data['image'] = $fileName;
         }
         Category::create($data);
@@ -119,9 +119,9 @@ class CategoryController extends Controller
         $data->slug = Str::of($request->name)->slug('-');
         if ($request->hasFile('image')) {
             $file = $request->file('image');
-            @unlink('uploads/categories/'.$data->image);
+            @unlink('images/categories/'.$data->image);
             $fileName = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('uploads/categories'), $fileName);
+            $file->move(public_path('images/categories'), $fileName);
             $data->image = $fileName;
         }
         $data->save();
